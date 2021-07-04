@@ -1,0 +1,33 @@
+.content_menu {
+  text-align: left;
+  position: fixed;
+  height: 100vh;
+  background: rgb(1, 1, 1);
+  color: white;
+  top: 0;
+  padding: 30px;
+}
+
+.content_menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content_menu li {
+  margin-bottom: 30px;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content_menu li:hover {
+  color: blue;
+}
+
+.content_menu li a {
+  color: white;
+}
+
+.content_menu li a:hover {
+  color: blue;
+}

@@ -1,0 +1,10 @@
+.content_table {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  text-align: center;
+}
+
+.content_table-table {
+  width: 60%;
+}

@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 import './index.css';
-import App from './App';
+import Belvo from './Belvo';
+import Account from './Account';
+import Transaction from './Transaction';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Route exact path="/" component={Belvo} />
+      <Route exact path="/account" component={Account} />
+      <Route exact path="/transactions" component={Transaction} />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
