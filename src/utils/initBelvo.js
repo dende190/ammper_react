@@ -46,7 +46,7 @@ function connectApi(route, method = 'GET', body = {}) {
   }
 
   return (
-    fetch(`http://localhost:8081/api/belvo/${route}`, options)
+    fetch(`https://ammper-api.herokuapp.com/api/belvo/${route}`, options)
     .then(response => response.json())
     .then(data => data)
     .catch(error => console.error('Error:', error))

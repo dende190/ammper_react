@@ -18,7 +18,7 @@ function Transaction() {
 
   useEffect(() => (
     fetch(
-      'http://localhost:8081/api/belvo/user/transactions',
+      'https://ammper-api.herokuapp.com/api/belvo/user/transactions',
       {
         method: 'post',
         mode: 'cors',

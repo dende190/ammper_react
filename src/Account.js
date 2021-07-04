@@ -18,7 +18,7 @@ function Account() {
 
   useEffect(() => (
     fetch(
-      'http://localhost:8081/api/belvo/user/accounts',
+      'https://ammper-api.herokuapp.com/api/belvo/user/accounts',
       {
         method: 'post',
         mode: 'cors',

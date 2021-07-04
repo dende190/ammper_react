@@ -4,7 +4,7 @@ import './Menu.css';
 function Menu() {
   const handleClick = () => {
     fetch(
-      'http://localhost:8081/api/belvo/logout',
+      'https://ammper-api.herokuapp.com/api/belvo/logout',
       {
         method: 'post',
         mode: 'cors',
