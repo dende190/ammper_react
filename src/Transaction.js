@@ -30,6 +30,10 @@ function Transaction() {
     )
     .then(response => response.json())
     .then(data => {
+      if (data.error) {
+        window.location.href = '/';
+        return;
+      }
       setTransactions(data);
       setstateLoader(false);
     })

@@ -30,6 +30,11 @@ function Account() {
     )
     .then(response => response.json())
     .then(data => {
+      if (data.error) {
+        window.location.href = '/';
+        return;
+      }
+
       setAccounts(data);
       setstateLoader(false);
     })

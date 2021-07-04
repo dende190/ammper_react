@@ -16,6 +16,7 @@ function Menu() {
     )
     .then(response => response.json())
     .then(data => {
+      localStorage.clear();
       window.location.href = '/';
     })
     .catch(error => console.log(error))
